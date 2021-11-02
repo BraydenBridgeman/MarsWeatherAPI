@@ -9,25 +9,108 @@
     <title>API Project #2</title>
 </head>
 <body>
+    <h1 class="mainHeader">Weather on Elysium Planititia</h1>
     <!-- Mars Main Class for most-up-to-date weather -->
     <main class="marsWeatherCurrent">
-        <h1 class="marsTitle">Elysium Pantitia Weather: Current Forecast</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="marsTitle">Elysium Plantitia Weather: Current Forecast</h1>
 
-        <div class="date"></div>
-            <h2 class="solDateTitle">Sol xxx</h2>
-            <p class="dateDayCurrent">November 2</p>
-        </div>
+                <div class="date col-sm">
+                    <h2 class="solDateTitle">Sol xxx</h2>
+                    <p class="engDateTitle">November 2</p>
+                </div>
 
-        <div class="temp">
-            <h2 class="solTempTitle">Temperature: in Celsius</h2>
-            <p class="highTemp">High: 40&#176; C</p>
-            <p class="lowTemp">Low: -180&#176; C</p>
+                <div class="temp col-sm">
+                    <h2 class="solTempTitle">Temperature: in Celsius</h2>
+                    <p class="highTemp">High: 40&#176; C</p>
+                    <p class="lowTemp">Low: -180&#176; C</p>
+                </div>
+
+                <div class="randomMarsPhoto col-sm">
+                    <h2 class="marsPhoto">Photo from Mars!</h2>
+                    <img src="assets/marsRoverSampleImage.gif" alt="Mars Rover Image" style="width:250px;height:128px;">
+                </div>
+
+                <div class="marsInfo">
+                    <p class="nasaCopy">NASA’s InSight Mars lander takes continuous weather measurements (temperature, wind, pressure) on the surface of Mars at Elysium Planitia, a flat, smooth
+                    plain near Mars’ equator.<br>
+                    Please note that there are sometimes problems with the sensors on Mars that result in missing data!<br>
+                    If you see a long gap, a search
+                    result may bring up more information on whether it is a long-lasting problem. Summaries of these data are available at <a href="https://mars.nasa.gov/insight/weather/" target="_blank">Mars Nasa InSight.</a></p>
+                </div>
+            </div>
         </div>
     </main>
+    
+    <!-- Previous Weather Cards -->
+    <div class="container-fluid">
+        <div class="row row-cols-3 d-flex p-3 bg-secondary text-white">
 
-    <div class="marsPreviousWeather">
+            <div class="col">
+                <div class="p-2 flex-fill container">
+                    <h3 class="previousDaySol">Sol xxx</h3>
+                        <p class="previousDayDate">November 1</p>
+                        <p class="previousDayTempHigh">High: 20&#176; C</p>
+                        <p class="previousDayTempLow">Low: -35&#176; C</p>
+                </div>
+            </div>
 
+            <div class="col">
+                <div class="p-2 flex-fill container">
+                    <h3 class="previousDaySol">Sol xxx</h3>
+                        <p class="previousDayDate">November 1</p>
+                        <p class="previousDayTempHigh">High: 20&#176; C</p>
+                        <p class="previousDayTempLow">Low: -35&#176; C</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="p-2 flex-fill container">
+                    <h3 class="previousDaySol">Sol xxx</h3>
+                        <p class="previousDayDate">November 1</p>
+                        <p class="previousDayTempHigh">High: 20&#176; C</p>
+                        <p class="previousDayTempLow">Low: -35&#176; C</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="p-2 flex-fill container">
+                    <h3 class="previousDaySol">Sol xxx</h3>
+                        <p class="previousDayDate">November 1</p>
+                        <p class="previousDayTempHigh">High: 20&#176; C</p>
+                        <p class="previousDayTempLow">Low: -35&#176; C</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="p-2 flex-fill container">
+                    <h3 class="previousDaySol">Sol xxx</h3>
+                        <p class="previousDayDate">November 1</p>
+                        <p class="previousDayTempHigh">High: 20&#176; C</p>
+                        <p class="previousDayTempLow">Low: -35&#176; C</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="p-2 flex-fill container">
+                    <h3 class="previousDaySol">Sol xxx</h3>
+                        <p class="previousDayDate">November 1</p>
+                        <p class="previousDayTempHigh">High: 20&#176; C</p>
+                        <p class="previousDayTempLow">Low: -35&#176; C</p>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+          <div class="text-center" style="background-color: rgba(255, 255, 255);">© 2021 Copyright: NASA</div>
+        </div>
+    </footer>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
