@@ -1,2 +1,8 @@
 API KEY
 V9Z2NVFng8h0UP4bVq2x1UIclO3BLlv8Mw1gemQQ
+
+API URL
+https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0
+
+Other API URL
+https://api.maas2.apollorion.com/

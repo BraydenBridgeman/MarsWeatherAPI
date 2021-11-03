@@ -5,6 +5,20 @@ body {
     background-size: cover; */
 }
 
-.marsWeatherCurrent {
-    background: rgba(0, 0, 0, 0.4);
+/* Title Header */
+
+h1.mainHeader {
+    background: rgba(255, 0, 0, 0.6);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-block: auto;
+    text-align: center;
 }
+
+/* Mars Weather Forecast */
+
+.marsWeatherCurrent {
+    background: rgba(82, 189, 21, 0.6);
+    text-align: center;
+}
+
