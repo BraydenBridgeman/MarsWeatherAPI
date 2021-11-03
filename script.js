@@ -78,3 +78,9 @@ function getMarsWeather () {
             })
         })
 }
+
+// API URL for Mars Rover Images
+const apiKey = "V9Z2NVFng8h0UP4bVq2x1UIclO3BLlv8Mw1gemQQ"
+const apiImagesURL = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=${apiKey}`
+
+console.log(apiImagesURL)

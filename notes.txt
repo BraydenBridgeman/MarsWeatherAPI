@@ -1,8 +1,17 @@
 API KEY
 V9Z2NVFng8h0UP4bVq2x1UIclO3BLlv8Mw1gemQQ
 
-API URL
+API URL for insight weather (broken)
 https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0
 
-Other API URL
-https://api.maas2.apollorion.com/
+Other API URL for displaying the last 7 days of insight weather (not broken)
+https://mars.nasa.gov/rss/api/?feed=weather&category=insight_temperature&feedtype=json&ver=1.0
+
+API URL for Rover Latest Photos
+https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=DEMO_KEY
+
+API URL for parsing data
+https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=V9Z2NVFng8h0UP4bVq2x1UIclO3BLlv8Mw1gemQQ
+
+Easy way to see data
+http://jsonviewer.stack.hu/
