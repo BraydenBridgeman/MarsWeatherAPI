@@ -11,7 +11,6 @@ const currentTempLowSpan = document.querySelector('[dataCurrentLowTemp]')
 const previousSolTemplate = document.querySelector('[dataPreviousSolTemplate]')
 const previousSolContainer = document.querySelector('[dataPreviousSols]')
 
-
 let currentSolDate
 
 getMarsWeather().then(sols => {
@@ -35,6 +34,13 @@ function displayPreviousSols(sols) {
     sols.forEach((solData, index) => {
         const solContainer = previousSolTemplate.content.cloneNode(true)
         solContainer.querySelector('[dataSol]').innerText = solData.sol
+        solContainer.querySelector('[dataDate').innerText = displayDate(solData.date)
+        solContainer.querySelector('[dataTempHigh').innerText = displayTemperature(solData.maxTemp)
+        solContainer.querySelector('[dataTempLow').innerText = displayTemperature(solData.minTemp)
+        solContainer.querySelector('[dataSelectButton]').addEventListener('click', () => {
+            currentSolDate = index
+            displayCurrentSolDate(sols)
+        })
         previousSolContainer.appendChild(solContainer)
     })
 }
