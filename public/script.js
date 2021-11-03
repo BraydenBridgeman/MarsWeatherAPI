@@ -84,3 +84,21 @@ const apiKey = "V9Z2NVFng8h0UP4bVq2x1UIclO3BLlv8Mw1gemQQ"
 const apiImagesURL = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=${apiKey}`
 
 console.log(apiImagesURL)
+
+// Grabbing the most recent image from Mars using Fetch and functions to parse the data, then displaying it within the HTML
+
+fetch(apiImagesURL)
+.then(function(response) {
+    return response.json();
+})
+.then(function(json) {
+    displayMarsImagesData(json);
+}) .catch(function(error) {
+    console.log(error);
+})
+
+function displayMarsImagesData (json) {
+    console.log(json);
+    let marsImage = document.querySelector('#marsImage')
+    marsImage.src = json.latest_photos[0].img_src
+}
