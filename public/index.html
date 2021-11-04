@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/din0njc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
     <title>API Project #2</title>
 </head>
 <body>
-    <h1 class="mainHeader">Weather on Elysium Planititia</h1>
+    <h1 class="mainHeader">WEATHER ON ELYSIUM PLANITITIA</h1>
     <!-- Mars Main Class for most-up-to-date weather -->
     <main class="marsWeatherCurrent">
         <div class="container-fluid">
             <div class="row">
-                <h1 class="marsTitle">Elysium Plantitia Weather: Current Forecast</h1>
+                <h1 class="marsTitle">Elysium Plantitia: Current Forecast</h1>
 
                 <div class="date col-sm">
                     <h2 class="solDateTitle">Sol
@@ -23,8 +27,13 @@
                     <p class="engDateTitle" dataCurrentDate></p>
                 </div>
 
+                <div class="randomMarsPhoto col-sm">
+                    <p id="marsPhotoText">Latest Photo From Mars</p>
+                    <img src="" id="marsImage" alt="most recent photo from Mars">
+                </div>
+
                 <div class="temp col-sm">
-                    <h2 class="solTempTitle">Temperature: in Celsius</h2>
+                    <h2 class="solTempTitle">Temperature</h2>
                     <p class="highTemp">
                         High: 
                         <span dataCurrentHighTemp></span>
@@ -37,11 +46,6 @@
                     </p>
                 </div>
 
-                <div class="randomMarsPhoto col-sm">
-                    <h2 class="marsPhoto">Photo from Mars!</h2>
-                    <img src="" id="marsImage" alt="most recent photo from Mars" style="width:250px;height:128px;">
-                </div>
-
                 <div class="marsInfo">
                     <p class="nasaCopy">NASA’s InSight Mars lander takes continuous weather measurements (temperature, wind, pressure) on the surface of Mars at Elysium Planitia, a flat, smooth
                     plain near Mars’ equator.<br>
@@ -51,8 +55,11 @@
             </div>
         </div>
     </main>
-    
+
     <!-- Previous Weather Row -->
+    <div class="bottomRow container-fluid">
+        <h1 class="previousWeatherTitle">Previous 7 Sols on Mars</h1>
+    </div>
         <div class="previousSols" dataPreviousSols>
             <template dataPreviousSolTemplate>
                 <div class="previousSolDate">

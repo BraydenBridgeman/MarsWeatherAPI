@@ -49,7 +49,7 @@ function displayPreviousSols(sols) {
 function displayDate(date) {
     return date.toLocaleDateString(
         undefined,
-        { day: 'numeric', month: 'long', }
+        { day: 'numeric', month: 'long', year: 'numeric' }
     )
 }
 
@@ -102,3 +102,8 @@ function displayMarsImagesData (json) {
     let marsImage = document.querySelector('#marsImage')
     marsImage.src = json.latest_photos[0].img_src
 }
+
+// Date and time above Mars Photo
+const d = new Date();
+
+document.getElementById("marsPhotoText").innerHTML = `Most recent photo from Mars as of ${d.toDateString()}`;
