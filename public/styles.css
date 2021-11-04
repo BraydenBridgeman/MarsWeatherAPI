@@ -1,4 +1,11 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
+    width: 100%;
+    height: 100%;
     background-color: white;
 }
 
@@ -19,6 +26,7 @@ h1.mainHeader {
     font-family: nasalization, sans-serif;
     font-weight: 400;
     font-style: normal;
+    letter-spacing: 1.5px;
     text-shadow: -4px -4px 2px #0b3d91, -6px -6px 2px #fc3d21;
 }
 
@@ -32,6 +40,7 @@ h1.mainHeader {
     background-position: top;
     background-attachment: fixed;
     text-align: center;
+    letter-spacing: 1px;
     padding-top: 200px;
     padding-bottom: 200px;
     padding-right: 50px;
@@ -88,6 +97,7 @@ h1.mainHeader {
 h1.marsTitle {
     font-family: 'Oxygen', sans-serif;
     font-size: 3em;
+    letter-spacing: 1px;
     text-shadow: -1px -1px 1px rgb(8, 94, 20), 1px 1px 1px rgb(0, 0, 0);
 	color: #77300a;
 	opacity: 0.65;
@@ -97,81 +107,121 @@ h2.solDateTitle {
     font-family: 'Oxygen', sans-serif;
     color: white;
     font-size: 3.5em;
+    letter-spacing: 1px;
 }
 
 h2.solTempTitle {
     font-family: 'Oxygen', sans-serif;
     color: white;
     font-size: 3.5em;
+    letter-spacing: 1px;
 }
 
 #marsPhotoText {
     font-family: 'Oxygen', sans-serif;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding-top: 25px;
+    letter-spacing: 0.7px;
 }
 
 .engDateTitle {
     font-family: 'Oxygen', sans-serif;
     color: #1059d6;
     font-size: 2em;
+    letter-spacing: 1px;
 }
 
 .highTemp {
     font-family: 'Oxygen', sans-serif;
     color: 	#fc3d21;
     font-size: 2em;
+    letter-spacing: 1px;
 }
 
 .lowTemp {
     font-family: 'Oxygen', sans-serif;
     color: 	#1059d6;
     font-size: 2em;
+    letter-spacing: 1px;
 }
 
 .nasaCopy {
     font-family: 'Oxygen', sans-serif;
     color: white;
     font-size: 1em;
+    letter-spacing: 0.5px;
 }
 
 /* previous weather section */
+.bottomRow {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+
 .previousSols {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 50px;
-    background-color: #2196F3;
+    background-image: url(assets/nebula_background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000000;
     padding: 10px;
     padding-top: 150px;
     padding-bottom: 150px;
     padding-right: 150px;
     padding-left: 150px;
     text-align: center;
-}
-
-.bottomRow {
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: black;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 1px;
 }
 
 /* styles for text on previous weather section */
 .previousWeatherTitle {
     font-family: 'Oxygen', sans-serif;
-    color: rgb(255, 255, 255);
+    color: #fc3d21;
     font-size: 3em;
+    letter-spacing: 1px;
+}
+
+.previousSolDateClass {
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    font-size: 1.8em;
+    letter-spacing: 1px;
 }
 
 .previousSolDateClassData {
     font-family: 'Oxygen', sans-serif;
     color: white;
-    font-size: 1em;
+    font-size: 1.5em;
+    letter-spacing: 1px;
 }
 
 .previousSolTemp {
     font-family: 'Oxygen', sans-serif;
     color: white;
     font-size: 1em;
+    letter-spacing: 1px;
+}
+
+/* Button for the previous Sols */
+
+.previousSolInfo {
+    transition-duration: 0.25s;
+    border: 5px solid #fc3d21;
+    border-radius: 25px;
+}
+
+.previousSolInfo:hover {
+    color: #1059d6;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.previousSolInfo:active {
+    transform: translateY(2px);
 }
